@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rack Hikvision Interactivo - 7 Equipos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="video-container">
+    <video autoplay muted loop playsinline id="background-video">
+      <source src="video-fondo.webm" type="video/webm" />
+      <source src="video-fondo.mp4" type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <main class="contenido-scroll">
+    <h1><span class="hik-red">HIK</span><span class="vision-gray">VISION</span></h1>
+
+    <div class="rack-container">
+      <img src="rack.png" alt="Rack Hikvision" class="rack-img" />
+
+      <!-- Equipo 1 -->
+      <div class="equipo" style="top: 13.7%; left: 50%;" onclick="toggleMenu(this)">
+        <div class="sub-menu">Router Industrial Hikvision<br>Modelo: DS-3WG507G-SI</div>
+      </div>
+
+      <!-- Equipo 2 -->
+      <div class="equipo" style="top: 18.2%; left: 50%;" onclick="toggleMenu(this)">
+        <div class="sub-menu">Switch Industrial Hikvision<br>Modelo: DS-3E1526P-SI</div>
+      </div>
+
+      <!-- Equipo 3 -->
+      <div class="equipo" style="top: 24%; left: 50%;" onclick="toggleMenu(this)">
+        <div class="sub-menu">Pachera Hikvision <br>(Espacio reservado)</div>
+      </div>
+
+      <!-- Equipo 4 -->
+      <div class="equipo" style="top: 40%; left: 50%;" onclick="toggleMenu(this)">
+        <div class="sub-menu"> Monitor de Supervisión Hikvision <br>Marca: DS-D5022F2-1V2 </div>
+      </div>
+
+      <!-- Equipo 5 -->
+      <div class="equipo" style="top: 56%; left: 50%;" onclick="toggleMenu(this)">
+        <div class="sub-menu"> Server Hikvision <br>Modelo: DS-VD22D-C/HW2 </div>
+      </div>
+
+      <!-- Equipo 6 -->
+      <div class="equipo" style="top: 65%; left: 50%;" onclick="toggleMenu(this)">
+        <div class="sub-menu">NVR Hikvision <br>Modelo: iDS-9664NXI-M8/X </div>
+      </div>
+
+      <!-- Equipo 7 -->
+      <div class="equipo" style="top: 80%; left: 50%;" onclick="toggleMenu(this)">
+        <div class="sub-menu">UPS Hikvision <br>Modelo: DS-UPS3000/ARG/TUV </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
